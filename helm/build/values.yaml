@@ -1,0 +1,18 @@
+app:
+  name: quay-integration-17
+  namespace: quay-integration-17-dev
+  cluster: .apps.cluster-gvch9.gvch9.sandbox1900.opentlc.com
+
+git:
+  branch: main
+  repo: https://github.com/janus-demo-video/quay-integration-17
+  org: janus-demo-video
+  name: quay-integration-17
+
+image:
+  registry: Openshift
+  organization: 
+  namespace: quay-integration-17-dev
+  host: image-registry.openshift-image-registry.svc:5000
+  name: quay-integration-17
+  tag: latest
